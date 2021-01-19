@@ -66,8 +66,9 @@
 <p><strong>Step 5</strong>: Find and open the <strong>MainActivity.kt</strong> and <strong>MainPresenter.kt</strong> files. The basic code snippets in these files will be completed during the implementation process.
 </p>
 <p>
-  <div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)">
- <pre>
+  <div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+ <div>
+  <pre>
  <span class="pun">
  ismail 
  emre 
