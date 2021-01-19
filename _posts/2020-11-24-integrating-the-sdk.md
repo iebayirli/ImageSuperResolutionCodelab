@@ -58,6 +58,9 @@
 <aside class="special">
     <p><strong>Note:</strong> When using the image super-resolution service, you need to set the value of <strong>targetSdkVersion</strong> less than 29 in the <strong>build.gradle</strong> file.</p>
 </aside>
+<aside class="special">
+   <p><strong>Note:</strong> Make sure that you configure apply plugin: ‘com.huawei.agconnect' after apply plugin:‘com.android.application'.</p>
+</aside>
 </ul>
 <p><strong>3. Configure obfuscation scripts.</strong></p>
 <ul>
