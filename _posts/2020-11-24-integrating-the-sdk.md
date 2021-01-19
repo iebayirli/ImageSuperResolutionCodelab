@@ -13,8 +13,7 @@
 &#9;&#9;maven { url 'https://developer.huawei.com/repo/' }
 &#9;&#9;...
 &#9;}
-}
-</code>
+}</code>
 </pre>
 
 • Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.
@@ -33,8 +32,7 @@
 &#9;dependencies {
 &#9;&#9;classpath 'com.huawei.agconnect:agcp:1.4.0.300'
 &#9;}
-}
-</code></pre>
+}</code></pre>
 
 
 
