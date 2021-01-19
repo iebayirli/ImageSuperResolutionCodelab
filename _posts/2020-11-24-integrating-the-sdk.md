@@ -27,14 +27,22 @@
 } </code></pre>
 
 • Go to <strong>buildscript </strong> &gt; <strong>dependencies </strong> and make sure AGC plugin dependency has been configured.
-<pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+<pre><div id="copy-button3" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
 <code>buildscript{
 &#9;dependencies {
 &#9;&#9;classpath 'com.huawei.agconnect:agcp:1.4.0.300'
 &#9;}
 }</code></pre>
 
+<p><strong>2. Review and configure the dependency package in the app’s build.gradle file.</strong></p>
 
+•	Make sure the Image Super-Resolution dependency has been added. If it’s not added add it as following the <strong>dependencies</strong> section in the <strong>build.gradle</strong> file.
 
+<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+<code>dependencies {
+&#9;...
+&#9;implementation 'com.huawei.hms:ml-computer-vision-imageSuperResolution:2.0.2.300’
+&#9;...
+}</code></pre>
 
   
