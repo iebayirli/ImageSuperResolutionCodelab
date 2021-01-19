@@ -45,7 +45,7 @@
 
 •	Configure targetSdkVersion
 
-<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
 <code>android {
 &#9;...
 &#9;defaultConfig {
