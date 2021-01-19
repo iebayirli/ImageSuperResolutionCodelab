@@ -1,10 +1,3 @@
----
-title: Setup the Project
-description: 5
----
-
-<p>You can download the codelab project from: <a href="https://github.com/huaweicodelabs/VideoKit/tree/master/PlayVideosWithVideoKit" target="_blank">https://github.com/huaweicodelabs/VideoKit/tree/master/PlayVideosWithVideoKit</a></p>
-
 <h2><strong>Creating a Project</strong></h2>
 <p><strong>Step 1</strong>: Start Android Studio.</p>
 <p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://github.com/iebayirli/ImageSuperResolutionCodelab/blob/master/assets/folderStructure.png" onclick="imageclick(src)"></p>
@@ -42,7 +35,7 @@ description: 5
 <ul>
 	<li>Make sure the Image Super-Resolution dependency has been added. If it’s not added add it as following the <strong>dependencies</strong> section in the <strong>build.gradle</strong> file.<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">dependencies </span><span class="pun">{</span><span class="pln">
 		</span><span class="pun">...</span><span class="pln">
-    </span><span class="str">            //Image Super-Resolution</span><span class="pln">
+    </span><span class="str">   //Image Super-Resolution</span><span class="pln">
 		implementation </span><span class="str">'com.huawei.hms:ml-computer-vision-imageSuperResolution:2.0.2.300'</span><span class="pln">
 		</span><span class="pun">...</span><span class="pln">
 	</span><span class="pun">}</span><span class="pln">
@@ -50,9 +43,10 @@ description: 5
 	</li>
 	</li>Configure targetSdkVersion
 	<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">android </span><span class="pun">{</span><span class="pln">
-		defaultConfig </span><span class="pun">{</span><span class="pln">
-     </span><span class="str">                   ...</span><span class="pln">
-     </span><span class="str">                   targetSdkVersion 28</span><span class="str"></span><span class="str">...</span><span class="pln">
+		defaultConfig </span><span class="pun">{</span><span class="pun">
+     </span><span class="pln">		...</span><span class="pln">
+     </span><span class="str">		targetSdkVersion 28</span><span class="pln">
+     </span> <span class="pln">		...</span><span class="pln">
 		</span><span class="pun">}</span><span class="pln">
 	</span><span class="pun">}</span><span class="pln">
 	</span></code></pre>
@@ -60,6 +54,9 @@ description: 5
 	<li>Add the following information under <strong>apply plugin: 'com.android.application'</strong> in the file header:<pre><div id="copy-button6" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin</span><span class="pun">:</span><span class="pln"> </span><span class="str">'com.huawei.agconnect'</span><span class="pln">
 	</span></code></pre>
 	</li>
+<aside class="special">
+    <p><strong>Note:</strong> When using the image super-resolution service, you need to set the value of <strong>targetSdkVersion</strong> less than 29 in the <strong>build.gradle</strong> file.</p>
+</aside>
 </ul>
 <p><strong>3. Configure obfuscation scripts.</strong></p>
 <ul>
