@@ -33,11 +33,10 @@ buildscript {
 <pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
 <code>
 buildscript{
-    dependencies {
-        classpath 'com.huawei.agconnect:agcp:1.4.0.300'
-    }
- }
-
+&#9;dependencies {
+&#9;&#9;classpath 'com.huawei.agconnect:agcp:1.4.0.300'
+&#9;}
+}
 </code></pre>
 
 
