@@ -42,12 +42,13 @@
 	</span></code></pre>
 	</li>
 	<li>Configure targetSdkVersion
-	<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">  android</span><span class="pun">{</span>
-  <span class="pln">defaultConfig </span><span class="pun">{</span>
-  <span class="pun"></span><span class="pln">		...</span>
-  <span class="pln"></span><span class="str">		targetSdkVersion 28</span>
-  <span class="pln"></span><span class="pln">		...</span>
-  <span class="pln"></span><span class="pun">}</span>
+	<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
+  <span class="pln">android</span><span class="pun">{</span>
+  <span class="pln">    defaultConfig </span><span class="pun">{</span>
+  <span class="pun"></span><span class="pln">		  ...</span>
+  <span class="pln"></span><span class="str">	  	  targetSdkVersion 28</span>
+  <span class="pln"></span><span class="pln">		  ...</span>
+  <span class="pln"></span><span class="pun">   }</span>
   <span class="pln"></span><span class="pun">}</span>
   <span class="pln"></span></code></pre>
 	</li>
