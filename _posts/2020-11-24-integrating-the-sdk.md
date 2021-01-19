@@ -18,4 +18,16 @@ allprojects {
 </code>
 </pre>
 
+• Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</li>
+<pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"> 
+<code>
+buildscript {
+&#9;repositories {
+&#9;&#9;maven {url 'https://developer.huawei.com/repo/'}
+&#9;&#9;...
+&#9;}
+&#9;...
+}
+ </div> </code></pre>
+
   
