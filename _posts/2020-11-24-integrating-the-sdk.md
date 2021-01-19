@@ -44,4 +44,16 @@
 &#9;...
 }</code></pre>
 
-  
+•	Configure targetSdkVersion
+
+<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+<code>android {
+&#9;...
+&#9;defaultConfig {
+&#9;&#9;...
+&#9;&#9;targetSdkVersion 28
+&#9;&#9;...
+&#9;}
+&#9;...
+}</code></pre>
+
