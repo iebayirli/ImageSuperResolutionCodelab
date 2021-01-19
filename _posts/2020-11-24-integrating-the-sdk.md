@@ -57,3 +57,7 @@
 &#9;...
 }</code></pre>
 
+<aside class="special">
+  <p><strong>Note:</strong> When using the image super-resolution service, you need to set the value of <strong>targetSdkVersion</strong> less than 29 in the <strong>build.gradle</strong> file.</p>
+</aside>
+
