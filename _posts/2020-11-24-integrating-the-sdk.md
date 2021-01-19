@@ -6,8 +6,7 @@
 <p><strong>1. Configure the Maven repository address and AppGallery Connect plug-in in the project's build.gradle file.</strong></p>
 
 • Go to <strong>allprojects</strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.
-<pre><div id="copy-button1" class="copy-btn" title="Copy" onclick="copyCode(this.id)"> </div>
-<code>allprojects {
+<pre><code><div id="copy-button1" class="copy-btn" title="Copy" onclick="copyCode(this.id)"> </div>allprojects {
 &#9;repositories {
 &#9;&#9;...
 &#9;&#9;maven { url 'https://developer.huawei.com/repo/' }
