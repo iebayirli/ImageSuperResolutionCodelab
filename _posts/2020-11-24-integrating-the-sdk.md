@@ -5,7 +5,7 @@
 <p><strong>Step 3</strong>: Configure the AppGallery Connect plug-in, Maven repository address, build dependencies, obfuscation scripts, and permissions. (These items have been configured in the sample code. If any of them does not meet your requirements, change it in your own project.)</p>
 <p><strong>1. Configure the Maven repository address and AppGallery Connect plug-in in the project's build.gradle file.</strong></p>
 <ul>
-  <li>Go to <strong>allprojects</strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</ul>
+  <li>Go to <strong>allprojects</strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</li>
     <pre><code>
 allprojects {
 &#9;repositories {
@@ -14,7 +14,7 @@ allprojects {
 &#9;&#9;...
 &#9;}
 }
- </code></pre></li>
+ </code></pre></ul>
   
  <ul><li>Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</li>
   <pre><code>
@@ -25,8 +25,7 @@ buildscript {
 &#9;}
 &#9;...
 }
-  </code></pre>
-</ul>
+  </code></pre></ul>
 
 
 
