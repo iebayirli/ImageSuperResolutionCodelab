@@ -66,18 +66,7 @@
 <p><strong>Step 4</strong>: In the Android Studio window, choose <strong>File > Sync Project</strong> with Gradle File to synchronize the project.</p>
 <p><strong>Step 5</strong>: Find and open the <strong>MainActivity.kt</strong> and <strong>MainPresenter.kt</strong> files. The basic code snippets in these files will be completed during the implementation process.
 </p>
-<p>
-<pre>
-<div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
-<code>
- <span class="pun">
-  <pre>
-    selamlar ismail emr
-bayirli
-  </pre>
-</span>
-</pre>
-</code>
-</p>
+<pre><code>$ brew install go
+</code></pre>
 
 
