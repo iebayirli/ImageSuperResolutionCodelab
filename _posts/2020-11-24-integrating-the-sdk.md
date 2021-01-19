@@ -61,3 +61,9 @@
   <p><strong>Note:</strong> When using the image super-resolution service, you need to set the value of <strong>targetSdkVersion</strong> less than 29 in the <strong>build.gradle</strong> file.</p>
 </aside>
 
+<aside class="special">
+  <p><strong>Note:</strong> Make sure that you configure apply plugin: ‘com.huawei.agconnect' after apply plugin:‘com.android.application'.</p>
+</aside>
+
+<p><strong>Step 4</strong>:In the Android Studio window, choose <strong>File &gt; Sync Project</strong> with Gradle File to synchronize the project.</p>
+<p><strong>Step 5</strong>:Find and open the <strong>MainActivity.kt</strong> and <strong>MainPresenter.kt</strong> files. The basic code snippets in these files will be completed during the implementation process.</p>
