@@ -41,7 +41,6 @@
 <code>dependencies {
 &#9;...
 &#9;implementation 'com.huawei.hms:ml-computer-vision-imageSuperResolution:2.0.2.300’
-&#9;...
 }</code></pre>
 
 •	Configure targetSdkVersion
