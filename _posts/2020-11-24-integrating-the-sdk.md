@@ -35,7 +35,7 @@
 <ul>
 	<li>Make sure the Image Super-Resolution dependency has been added. If it’s not added add it as following the <strong>dependencies</strong> section in the <strong>build.gradle</strong> file.<pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">dependencies </span><span class="pun">{</span><span class="pln">
 		</span><span class="pun">...</span><span class="pln">
-    </span><span class="str">   //Image Super-Resolution</span><span class="pln">
+    </span><span class="str">            //Image Super-Resolution</span><span class="pln">
 		implementation </span><span class="str">'com.huawei.hms:ml-computer-vision-imageSuperResolution:2.0.2.300'</span><span class="pln">
 		</span><span class="pun">...</span><span class="pln">
 	</span><span class="pun">}</span><span class="pln">
@@ -44,11 +44,11 @@
 	<li>Configure targetSdkVersion
 	<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>
   <span class="pln">android</span><span class="pun">{</span>
-  <span class="pln">    defaultConfig </span><span class="pun">{</span>
-  <span class="pun"></span><span class="pln">		  ...</span>
-  <span class="pln"></span><span class="str">	  	  targetSdkVersion 28</span>
-  <span class="pln"></span><span class="pln">		  ...</span>
-  <span class="pln"></span><span class="pun">   }</span>
+  <span class="pln">       defaultConfig </span><span class="pun">{</span>
+  <span class="pun"></span><span class="pln">		 ...</span>
+  <span class="pln"></span><span class="str">	  	 targetSdkVersion 28</span>
+  <span class="pln"></span><span class="pln">		 ...</span>
+  <span class="pln"></span><span class="pun">      }</span>
   <span class="pln"></span><span class="pun">}</span>
   <span class="pln"></span></code></pre>
 	</li>
