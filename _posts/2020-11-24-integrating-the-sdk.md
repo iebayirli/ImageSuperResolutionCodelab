@@ -18,7 +18,7 @@ allprojects {
 </code>
 </pre>
 
-• Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</li>
+• Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.
 <pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
 <code>
 buildscript {
@@ -28,6 +28,19 @@ buildscript {
 &#9;}
 &#9;...
 } </code></pre>
+
+• Go to <strong>buildscript </strong> &gt; <strong>dependencies </strong> and make sure AGC plugin dependency has been configured.
+<pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div>
+<code>
+buildscript{
+    dependencies {
+        classpath 'com.huawei.agconnect:agcp:1.4.0.300'
+    }
+ }
+
+</code></pre>
+
+
 
 
   
