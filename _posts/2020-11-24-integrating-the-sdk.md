@@ -42,14 +42,14 @@
 	</span></code></pre>
 	</li>
 	<li>Configure targetSdkVersion
-	<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">android </span><span class="pun">{</span><span class="pln">
-		defaultConfig </span><span class="pun">{</span><span class="pun">
-     </span><span class="pln">		...</span><span class="pln">
-     </span><span class="str">		targetSdkVersion 28</span><span class="pln">
-     </span> <span class="pln">		...</span><span class="pln">
-		</span><span class="pun">}</span><span class="pln">
-	</span><span class="pun">}</span><span class="pln">
-	</span></code></pre>
+	<pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">  android</span><span class="pun">{</span>
+  <span class="pln">defaultConfig </span><span class="pun">{</span>
+  <span class="pun"></span><span class="pln">		...</span>
+  <span class="pln"></span><span class="str">		targetSdkVersion 28</span>
+  <span class="pln"></span><span class="pln">		...</span>
+  <span class="pln"></span><span class="pun">}</span>
+  <span class="pln"></span><span class="pun">}</span>
+  <span class="pln"></span></code></pre>
 	</li>
 	<li>Add the following information under <strong>apply plugin: 'com.android.application'</strong> in the file header:<pre><div id="copy-button6" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code><span class="pln">apply plugin</span><span class="pun">:</span><span class="pln"> </span><span class="str">'com.huawei.agconnect'</span><span class="pln">
 	</span></code></pre>
