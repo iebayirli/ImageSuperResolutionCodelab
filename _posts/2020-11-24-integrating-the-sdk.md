@@ -6,7 +6,8 @@
 <p><strong>1. Configure the Maven repository address and AppGallery Connect plug-in in the project's build.gradle file.</strong></p>
 <ul>
   <li>Go to <strong>allprojects</strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</li>
-    <pre><code>
+  <div>
+      <pre><code>
 allprojects {
 &#9;repositories {
 &#9;&#9;...
@@ -14,7 +15,9 @@ allprojects {
 &#9;&#9;...
 &#9;}
 }
- </code></pre></ul>
+ </code></pre>
+  </div>
+</ul>
   
  <ul><li>Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</li>
   <pre><code>
