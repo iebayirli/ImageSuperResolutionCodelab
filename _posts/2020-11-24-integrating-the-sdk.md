@@ -63,5 +63,5 @@
 </aside>
 </ul>
 <p><strong>Step 4</strong>: In the Android Studio window, choose <strong>File > Sync Project</strong> with Gradle File to synchronize the project.</p>
-<p><strong>Step 5</strong>:Find and open the <strong>MainActivity.kt</strong> and <strong>MainPresenter.kt</strong> files. The basic code snippets in these files will be completed during the implementation process.
+<p><strong>Step 5</strong>: Find and open the <strong>MainActivity.kt</strong> and <strong>MainPresenter.kt</strong> files. The basic code snippets in these files will be completed during the implementation process.
 </p>
