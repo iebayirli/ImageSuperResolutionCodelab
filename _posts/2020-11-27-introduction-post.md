@@ -3,28 +3,22 @@ title: "Introduction"
 description: 1
 ---
 
-<huawei-codelab-about codelab-title="Huawei Video Kit" last-updated="2020-12-09T13:20:13-07:00" authors="Huawei Codelab Team">
+<huawei-codelab-about codelab-title="ML Kit Image Super-Resolution" last-updated="2021-01-19T13:20:13-07:00" authors="Huawei Codelab Team">
 <div class="codelab-title">
-<div class="token">Huawei Video Kit</div></div>
+<div class="token">ML Kit Image Super-Resolution</div></div>
 <div class="about-card">
 <h2 class="title">About this codelab</h2>
-<div class="last-updated"><i class="material-icons">subject</i>Last updated Dec 09, 2020</div>
+<div class="last-updated"><i class="material-icons">subject</i>Last updated Jan 19, 2021</div>
 <div class="authors"><i class="material-icons">account_circle</i>Written by Huawei Codelab Team</div></div>
 </huawei-codelab-about>
 
 <p>
-	HUAWEI Video Kit provides video playback in this version, and will support video editing and video hosting in later versions, helping you quickly build desired video features to deliver a superb video experience to your app users.
+	The image super resolution service provided by HUAWEI ML Kit provides 1x super-resolution capability. With the resolution unchanged, the capability can remove noise of images to obtain clearer images.
 </p>
 <h2>
 	<strong>What You Will Create</strong>
 </h2>
-<p>In this codelab, you will use the demo project that has been created for you to experience Video Kit APIs. Through the demo project, you will experience developing a video play feature with;</p>
-<ul>
-	<li>Initializing Wise Player</li>
-	<li>Setting Urls to display a video</li>
-	<li>Playing the video in the app</li>
-	<li>Using powerful Video Kit Features</li>
-</ul>
+<p>In this codelab, you will learn how to use ML Kit Image-Super Resolution in MVP design pattern that is one of the Android design patterns.</p>
 <h2 class="checklist">
 	<strong>What You Will Learn</strong>
 </h2>
@@ -32,6 +26,7 @@ description: 1
 	In this codelab, you will learn how to:
 </p>
 <ul class="checklist">
-	<li>Initialize Wise Player in order to display videos</li>
-	<li>Integrate and use abilities of Video Kit SDK</li>
+	<li>Create an app in AppGallery Connect.</li>
+	<li>Integrate the HMS Core ML SDK.</li>
+  <li>Integrate and use Image Super-Resolution feature in ML Kit.</li>
 </ul>
