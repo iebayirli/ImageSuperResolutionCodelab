@@ -59,7 +59,7 @@ startActivityForResult(galleryIntent, code)</code></pre>
 <pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Get uri from the result if the process successfully done.</code></pre>
 
 <p><strong>12. Add following codes in MainPresenter located area.</strong></p>
-<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>when (requestCode) {
+<pre><div id="copy-button18" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>when (requestCode) {
     GALLERY_REQ_CODE -> {
         if (resultCode == Activity.RESULT_OK) {
             data?.data?.let { uri ->
@@ -69,6 +69,37 @@ startActivityForResult(galleryIntent, code)</code></pre>
         }
     }
 }</code></pre>
+
+<p><strong>13. Go to MainActivity and locate the following code.</strong></p>
+<pre><div id="copy-button19" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Create bitmap and ML Frame instances for service and start resolution process.</code></pre>
+
+<p><strong>14. Add following codes under the snippet area.</strong></p>
+<pre><div id="copy-button20" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// Create an Input Stream for creating bitmap.
+val inputStream = contentResolver.openInputStream(uri)
+
+// In Image Super-Resolution service the bitmap type must be ARGB8888.
+// We are setting the options for necessary conversion.
+val bitmapOptions = BitmapFactory.Options()
+bitmapOptions.inPreferredConfig = Bitmap.Config.ARGB_8888
+
+// After configuration we are creating a bitmap using Input Stream and Bitmap Options.
+val selectedBitmap = BitmapFactory.decodeStream(inputStream, null, bitmapOptions)
+
+selectedBitmap?.let { selectedBitmap ->
+
+    // We are adding the original image to the UI.
+    iv_originalImage.setImageBitmap(selectedBitmap)
+
+    // For use the Image Super-Resolution we need a MLFrame instance.
+    // We create a MLFrame using bitmap that we created before.
+    val mlFrame = MLFrame.Creator().setBitmap(selectedBitmap).create()
+
+    // After the creation process, we give the MLFrame to the analyzer for Super-Resolution.
+    val task = analyzer.asyncAnalyseFrame(mlFrame)
+    // Then we are sending the task to presenter for getting result.
+    presenter.getResolutionResults(task)
+}</code></pre>
+
 
 
 
