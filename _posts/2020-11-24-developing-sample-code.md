@@ -28,9 +28,7 @@ analyzer= MLImageSuperResolutionAnalyzerFactory.getInstance()
 <pre><div id="copy-button9" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Clear view and start capturing images from gallery process.</code></pre>
 
 <p><strong>4. Add the following code to clear UI and start gallery process.</strong></p>
-<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>...
-presenter.startGetImageProcess()
-</code></pre>
+<pre><div id="copy-button10" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>...presenter.startGetImageProcess()</code></pre>
 
 <p><strong>5. Go to MainPresenter, locate the following line for trigger the gallery process.</strong></p>
 <pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Set result code for gallery intent and trigger the process.</code</pre>
