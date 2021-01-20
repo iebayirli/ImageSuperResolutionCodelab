@@ -3,7 +3,7 @@ title: Setup the Project
 description: 5
 ---
 
-<p>You can download the project from: <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-References/mlexception-0000001050169383-V5" target="_blank">Download</a></p>
+<p>You can download the project from here: <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-References/mlexception-0000001050169383-V5" target="_blank">Download</a></p>
 
 <h2><strong>Creating a Project</strong></h2>
 <p><strong>Step 1</strong>: Start Android Studio.</p>
