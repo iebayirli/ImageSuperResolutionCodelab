@@ -17,5 +17,9 @@ description: 2
     </ol>
   </li>
 </ol>
+
+<aside class="special">
+  <p><strong>Note:</strong> For details about the error codes, please refer to ML Kit Error Codes</p>
+</aside>
 <img style="width: 220.00px" src="https://raw.githubusercontent.com/bekiryavuzkoc/testRepo/gh-pages/assets/videokitone.jpg" onclick="imageclick(src)">             <img style="width: 217.00px" src="https://raw.githubusercontent.com/bekiryavuzkoc/testRepo/gh-pages/assets/playvideoswithvideokittwo.PNG" onclick="imageclick(src)">
 
