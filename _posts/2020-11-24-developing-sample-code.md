@@ -100,6 +100,37 @@ selectedBitmap?.let { selectedBitmap ->
     presenter.getResolutionResults(task)
 }</code></pre>
 
+<p><strong>15. Go to MainPresenter. Locate the following line after sending task from MainActivity.</strong></p>
+<pre><div id="copy-button21" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Get results from the task after it starts.</code></pre>
+
+<p><strong>16.  Add following codes under the located line in MainPresenter.</strong></p>
+<pre><div id="copy-button22" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// We are adding success and failure listener for task.
+task.addOnSuccessListener { result ->
+
+    // If service done successfully we are getting processed bitmap from result.
+    val processedResult = result.bitmap
+
+    // We are adding the processed bitmap to the UI.
+    view?.setImageToUI(processedResult)
+
+    // We stop the service after we finish our work.
+    view?.stopAnalyzer()
+
+}.addOnFailureListener { exception ->
+
+    // We stop the service first.
+    view?.stopAnalyzer()
+
+    // If the error is ML Exception;
+    if (exception is MLException) {
+        // We are getting the error code from exception,
+        val errorCode = exception.errCode
+        // Show the error to user.
+        view?.showErrorDialog(errorCode)
+    }
+}</code></pre>
+
+
 
 
 
