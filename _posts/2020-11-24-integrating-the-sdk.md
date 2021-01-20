@@ -15,7 +15,7 @@
 }</code>
 </pre>
 
-• Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.
+<p>• Go to <strong>buildscript </strong> &gt; <strong>repositories</strong> and configure the Maven repository address for the HMS Core SDK.</p>
 <pre><div id="copy-button2" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>buildscript {
 &#9;repositories {
 &#9;&#9;maven {url 'https://developer.huawei.com/repo/'}
@@ -24,7 +24,7 @@
 &#9;...
 } </code></pre>
 
-• Go to <strong>buildscript </strong> &gt; <strong>dependencies </strong> and make sure AGC plugin dependency has been configured.
+<p>• Go to <strong>buildscript </strong> &gt; <strong>dependencies </strong> and make sure AGC plugin dependency has been configured.</p>
 <pre><div id="copy-button3" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>buildscript{
 &#9;dependencies {
 &#9;&#9;classpath 'com.huawei.agconnect:agcp:1.4.0.300'
@@ -33,14 +33,14 @@
 
 <p><strong>2. Review and configure the dependency package in the app’s build.gradle file.</strong></p>
 
-•	Make sure the Image Super-Resolution dependency has been added. If it’s not added add it as following the <strong>dependencies</strong> section in the <strong>build.gradle</strong> file.
+<p>•	Make sure the Image Super-Resolution dependency has been added. If it’s not added add it as following the <strong>dependencies</strong> section in the <strong>build.gradle</strong> file.</p>
 
 <pre><div id="copy-button4" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>dependencies {
 &#9;...
 &#9;implementation "com.huawei.hms:ml-computer-vision-imageSuperResolution:2.0.2.300"
 }</code></pre>
 
-•	Configure targetSdkVersion
+<p>•	Configure targetSdkVersion</p>
 
 <pre><div id="copy-button5" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>android {
 &#9;...
