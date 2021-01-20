@@ -32,7 +32,7 @@ analyzer= MLImageSuperResolutionAnalyzerFactory.getInstance()
 presenter.startGetImageProcess()</code></pre>
 
 <p><strong>5. Go to MainPresenter, locate the following line for trigger the gallery process.</strong></p>
-<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> // TODO Set result code for gallery intent and trigger the process.</code></pre>
+<pre><div id="copy-button11" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Set result code for gallery intent and trigger the process.</code></pre>
 
 <p><strong>6. Add the following code in MainPresenter to set the request code for gallery intent and trigger the process.</strong></p>
 <pre><div id="copy-button12" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>view?.getImage(GALLERY_REQ_CODE)</code></pre>
@@ -48,4 +48,30 @@ galleryIntent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes)
 galleryIntent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
 
 startActivityForResult(galleryIntent, code)</code></pre>
+
+<p><strong>9. Locate the following code in MainActivity. We will catch the gallery result in MainActivity file. After catching we will send the result to presenter for analyze.</strong></p>
+<pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Get the result and sent to presenter for analyze.</code></pre>
+
+<p><strong>10. Add following code for analyze the result.</strong></p>
+<pre><div id="copy-button16" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>presenter.onActivityResult(requestCode, resultCode, data)</code></pre>
+
+<p><strong>11. Go to MainPresenter again. After activity result get uri from selected image. Locate the following code.</strong></p>
+<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>// TODO Get uri from the result if the process successfully done.</code></pre>
+
+<p><strong>12. Add following codes in MainPresenter located area.</strong></p>
+<pre><div id="copy-button17" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code>when (requestCode) {
+    GALLERY_REQ_CODE -> {
+        if (resultCode == Activity.RESULT_OK) {
+            data?.data?.let { uri ->
+                // After getting uri from data we are sending uri to view.
+                view?.createBitmapAndStartResolution(uri)
+            }
+        }
+    }
+}</code></pre>
+
+
+
+
+
 
