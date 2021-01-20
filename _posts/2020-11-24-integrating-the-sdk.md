@@ -1,3 +1,8 @@
+---
+title: Setup the Project
+description: 5
+---
+
 <h2><strong>Creating a Project</strong></h2>
 <p><strong>Step 1</strong>: Start Android Studio.</p>
 <p><strong>Step 2</strong>: Choose <strong>File</strong> &gt; <strong>Open</strong>, go to the directory where the sample project is decompressed, and click <strong>OK</strong>.<br><img style="width: 376.00px" src="https://github.com/iebayirli/ImageSuperResolutionCodelab/blob/master/assets/folderStructure.png" onclick="imageclick(src)"></p>
