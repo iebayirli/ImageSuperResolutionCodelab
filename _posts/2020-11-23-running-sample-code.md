@@ -21,5 +21,5 @@ description: 2
 <aside class="special">
   <p><strong>Note:</strong> For details about the error codes, please refer to  <a href="https://developer.huawei.com/consumer/en/doc/HMSCore-References/mlexception-0000001050169383-V5" target="_blank">ML Kit Error Codes</a></p>
 </aside>
-<img style="width: 220.00px" src="https://raw.githubusercontent.com/bekiryavuzkoc/testRepo/gh-pages/assets/videokitone.jpg" onclick="imageclick(src)">             <img style="width: 217.00px" src="https://raw.githubusercontent.com/bekiryavuzkoc/testRepo/gh-pages/assets/playvideoswithvideokittwo.PNG" onclick="imageclick(src)">
+<img style="width: 220.00px" src="https://raw.githubusercontent.com/iebayirli/ImageSuperResolutionCodelab/master/assets/outputFile.png" onclick="imageclick(src)">
 
